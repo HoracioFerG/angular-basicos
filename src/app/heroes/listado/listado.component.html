@@ -1,0 +1,11 @@
+<p>listado works!</p>
+<ol >
+    <li *ngFor="let item of heroes">{{item}}</li>
+</ol>
+
+<h3 *ngIf="animeBorrado; else noBorrado">Ánime borrado: {{animeBorrado}}</h3>
+<ng-template #noBorrado><h3>Lista completa.</h3></ng-template>
+
+
+
+<button (click)="borrarAnime()">Borrar</button>
